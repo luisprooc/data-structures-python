@@ -13,9 +13,9 @@ Next I will be explaining as precisely as possible some of the most used data st
 
 ### CONTENTS:
 
-* [ARRAYS](#ARRAYS)
-* [LINKED LIST](#LINKED)
-* [STACKS](#STACKS)
+* [Arrays](#ARRAYS)
+* [Linked List](#LINKED)
+* [Stacks](#STACKS)
 
 
 
@@ -36,3 +36,11 @@ As I mentioned earlier, these characteristics do not apply to all languages, wha
 * It is easy to add elements at the end, the thing is complicated when you must add elements in specific places of the matrix since to do this the other elements that are in front must be pushed, in general this process is usually an O (n).
 
 **FOR MORE SEE THE FILE arrays.py IN SRC**
+
+
+
+## LINKED LIST
+
+
+
+**FOR MORE SEE THE FILE linked_list.py IN SRC**
