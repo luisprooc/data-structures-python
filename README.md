@@ -106,14 +106,14 @@ BIG O NOTATION
 
 ## QUEQUES
 
-It is another data structure based on a collection of lists, it is associated with the LIFO structure, that is, the last to enter is the first to leave.
+It is associated with the FIFO structure, that is, the first to enter is the first to leave.
 
-We can see it this way, let's imagine that we have a stack of plates, we are placing them one on top of the other and to remove a certain plate from the stack we must first remove the plates that are on top of the plate that we want to extract.
-
-
-![Queques](https://res.cloudinary.com/practicaldev/image/fetch/s--s1Qbl8Gf--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://thepracticaldev.s3.amazonaws.com/i/mwcwre09s12vqa3gvl7a.png)
+Imagine that there is a line at the supermarket to obtain a certain product, the people who arrive first are the first to obtain said product and those who arrive later go back to wait their turn.
 
 
+![Queques](https://media.geeksforgeeks.org/wp-content/cdn-uploads/gq/2014/02/Queue.png)
+
+We must also take into account the priority queques where each "person" is assigned a priority, such as the priority given to people with disabilities or pregnant women, if there are no people who meet these characteristics in the queque. , the first to leave will be the first to be served.
 
 BIG O NOTATION
 
