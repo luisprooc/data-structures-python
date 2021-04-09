@@ -41,6 +41,24 @@ As I mentioned earlier, these characteristics do not apply to all languages, wha
 
 ## LINKED LIST
 
+Linked lists, unlike arrays, do not handle indexes so you cannot access them in a common way, like this: list [0].
+
+By convention, generally the elements within the linkedlist are called nodes. These nodes contain a value and the reference to the next element.
+
+
+![Linked List](https://i1.faceprep.in/Companies-1/types-of-linked-list.png)
+
+
+
+BIG O NOTATION
+
+**SEARCH** --> O(n)
+
+**ACCESS** --> O(n)
+
+**DELETE** --> O(1)
+
+**INSERT** --> O(1)
 
 
 **FOR MORE SEE THE FILE linked_list.py IN SRC**

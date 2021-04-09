@@ -33,7 +33,7 @@ class LinkedList(object):
             self.head = new_element
 
     
-    def get_position(self,position):
+    def get_position(self,position) -> object:
 
         """
         Get an element from a particular position.
@@ -56,7 +56,7 @@ class LinkedList(object):
         return Element( None )
 
 
-    def insert(self, new_element, position):
+    def insert(self, new_element, position) -> None:
 
         """
         Insert a new node at the given position.
@@ -68,12 +68,6 @@ class LinkedList(object):
 
         current = self.head
         next = 1
-
-        if position == 1:
-            new_element.next = self.head.next
-            self.head = new_element
-
-            return None
 
         while current:
 
@@ -87,16 +81,10 @@ class LinkedList(object):
             next += 1
 
 
-    def delete(self, value):
+    def delete(self, value) -> None:
         """Delete the first node with a given value."""
         
-
         current = self.head
-
-        # If the value is equal to head, replace it
-        if current.next and current.value == value:
-            self.head = current.next 
-            return None
 
         while current:
             
@@ -107,7 +95,27 @@ class LinkedList(object):
             current = current.next
 
 
-    def print_items(self):
+    def insert_first(self, new_element) -> None:
+        "Insert new element as the head of the LinkedList"
+          
+        new_element.next = self.head
+        self.head = new_element
+
+      
+
+    def delete_first(self) -> object:
+        "Delete the first (head) element in the LinkedList as return it"
+        prev = self.head
+
+        if self.head.next:
+            self.head = self.head.next
+            prev.next = None
+            return prev
+
+        return prev
+
+
+    def print_items(self) -> None:
         current = self.head
         position = 1
 
@@ -121,8 +129,19 @@ class LinkedList(object):
         return None
 
 
-        
+    def size(self) -> int:
+        current = self.head
+        length = 0
 
+        while current:
+            current = current.next
+            length += 1
+
+
+        return length
+
+
+        
 
 
 # Set up some Elements
@@ -137,5 +156,4 @@ ll.append(e2)
 ll.append(e3)
 
 
-ll.insert(e4,3)
-ll.print_items()
+print(ll.size())
