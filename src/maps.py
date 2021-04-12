@@ -15,22 +15,22 @@ Atlanta (USA, North America)
 Cairo (Egypt, Africa)
 Shanghai (China, Asia)"""
 
-locations = {
-    'North America': {'USA': ['Mountain View','Atlanta']}, 
-    'Asia': {'China': ['Shangai'] , 'India': ['Bangalore']},
-    'Africa': {'Egypt': ['Cairo']}
-    }
+"""
 
-"""Print the following (using "print").
-1. A list of all cities in the USA in
-alphabetic order.
-2. All cities in Asia, in alphabetic
-order, next to the name of the country.
-In your output, label each answer with a number
-so it looks like this:
-1
-American City
-American City
-2
-Asian City - Country
-Asian City - Country"""
+locations = { 'North America': {'USA': ['Mountain View']} }
+
+# Add elements
+locations["North America"]["USA"].append("Atlanta")
+
+locations["Asia"] = {"China": ["Shanghai"]}
+
+locations["Asia"] = {"India": ["Bangalore"]}
+
+locations["Africa"] = {"Egypt": ["Cairo"]}
+
+# Loop cities from North America
+
+for items in locations["North America"].values():
+    print(items)
+
+"""

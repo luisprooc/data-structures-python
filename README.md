@@ -17,6 +17,7 @@ Next I will be explaining as precisely as possible some of the most used data st
 * [Linked List](#linked-list)
 * [Stacks](#stacks)
 * [Queques](#queques)
+* [Hash Table](#hash-table)
 
 
 
@@ -127,3 +128,29 @@ BIG O NOTATION
 
 
 **FOR MORE SEE THE FILE queque.py IN SRC**
+
+
+
+## HASH TABLE
+
+It is associated with the FIFO structure, that is, the first to enter is the first to leave.
+
+Imagine that there is a line at the supermarket to obtain a certain product, the people who arrive first are the first to obtain said product and those who arrive later go back to wait their turn.
+
+
+![Hash Table](https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/Hash_table_3_1_1_0_1_0_0_SP.svg/1920px-Hash_table_3_1_1_0_1_0_0_SP.svg.png)
+
+We must also take into account the priority queques where each "person" is assigned a priority, such as the priority given to people with disabilities or pregnant women, if there are no people who meet these characteristics in the queque. , the first to leave will be the first to be served.
+
+BIG O NOTATION
+
+**SEARCH** --> O(1)
+
+**ACCESS** --> O(1)
+
+**DELETE** --> O(1)
+
+**INSERT** --> O(1)
+
+
+**FOR MORE SEE THE FILE maps.py and hash_table.py IN SRC**
