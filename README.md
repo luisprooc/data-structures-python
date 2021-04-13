@@ -133,14 +133,14 @@ BIG O NOTATION
 
 ## HASH TABLE
 
-It is associated with the FIFO structure, that is, the first to enter is the first to leave.
-
-Imagine that there is a line at the supermarket to obtain a certain product, the people who arrive first are the first to obtain said product and those who arrive later go back to wait their turn.
-
 
 ![Hash Table](https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/Hash_table_3_1_1_0_1_0_0_SP.svg/1920px-Hash_table_3_1_1_0_1_0_0_SP.svg.png)
 
-We must also take into account the priority queques where each "person" is assigned a priority, such as the priority given to people with disabilities or pregnant women, if there are no people who meet these characteristics in the queque. , the first to leave will be the first to be served.
+
+The hash table stores the information associating a key to a certain value, said key can be calculated in different ways, either with the ASCII code or another mathematical function.
+
+Despite being one of the data structures with the fastest access to its elements, it takes up much more space than most. That is why we must evaluate well whether or not to implement a hash table. Also keep in mind that the keys cannot be repeated (collisions) since the hash table is based on sets to store the values, if for some reason there is a collision the new value will replace the previous one.
+
 
 BIG O NOTATION
 
