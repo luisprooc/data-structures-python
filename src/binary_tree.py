@@ -9,59 +9,33 @@ class BinaryTree(object):
         self.root = Node(root)
 
     def search(self, find_val):
-        """Return True if the value
-        is in the tree, return
-        False otherwise."""
-        current_node = self.root
-        preorder_checkpoint = None
-
-        if current_node:
-            while current_node:
-
-                if current_node.right:
-                    preorder_checkpoint = current_node
-
-                if find_val == current_node.value:
-                    return True
-
-                elif not current_node.left:
-                    print(current_node.value,preorder_checkpoint.value)
-                
-                current_node = current_node.left
-                
-
-        return False
+        return self.preorder_search(tree.root, find_val)
 
     def print_tree(self):
-        """Print out all tree nodes
-        as they are visited in
-        a pre-order traversal."""
-        nodes = ""
-        current_node = self.root
-        preorder_checkpoint = None
-
-        if current_node:
-            while current_node:
-
-                nodes += str(current_node.value) + "-"
-                
-                if current_node.right:
-                    preorder_checkpoint = current_node
-
-                current_node = current_node.left
-
-
-        return nodes
+        return self.preorder_print(tree.root, "")[:-1]
 
     def preorder_search(self, start, find_val):
-        """Helper method - use this to create a 
-        recursive search solution."""
+        if start:
+            if start.value == find_val:
+                return True
+            else:
+                return self.preorder_search(start.left, find_val) or self.preorder_search(start.right, find_val)
         return False
 
     def preorder_print(self, start, traversal):
-        """Helper method - use this to create a 
-        recursive print solution."""
+        if start:
+            traversal += (str(start.value) + "-")
+            traversal = self.preorder_print(start.left, traversal)
+            traversal = self.preorder_print(start.right, traversal)
         return traversal
+
+    
+    
+    def insert(self, start, new_node):
+        if start:
+            return self.insert(start.left, new_node) or self.insert(start.right, new_node)
+
+        return None
 
 
 # Set up tree
@@ -75,8 +49,9 @@ tree.root.left.right = Node(5)
 # Test search
 # Should be True
 # Should be False
-print(tree.search(6))
+#print(tree.search(3))
 #print (tree.search(6))
+print(tree.insert( tree.root,Node(7) ))
 print (tree.print_tree())
 
 """
