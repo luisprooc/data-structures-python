@@ -30,12 +30,6 @@ class BinaryTree(object):
         return traversal
 
     
-    
-    def insert(self, start, new_node):
-        if start:
-            return self.insert(start.left, new_node) or self.insert(start.right, new_node)
-
-        return None
 
 
 # Set up tree
@@ -51,9 +45,8 @@ tree.root.left.right = Node(5)
 # Should be False
 #print(tree.search(3))
 #print (tree.search(6))
-print(tree.insert( tree.root,Node(7) ))
-print (tree.print_tree())
-
+"""
+"""
 """
 # Test print_tree
 # Should be 1-2-4-5-3
