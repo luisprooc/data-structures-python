@@ -163,9 +163,7 @@ BIG O NOTATION
 ![Binary Tree](https://austingwalters.com/wp-content/uploads/2014/10/binary-tree-1.png)
 
 
-The hash table stores the information associating a key to a certain value, said key can be calculated in different ways, either with the ASCII code or another mathematical function.
-
-Despite being one of the data structures with the fastest access to its elements, it takes up much more space than most. That is why we must evaluate well whether or not to implement a hash table. Also keep in mind that the keys cannot be repeated (collisions) since the hash table is based on sets to store the values, if for some reason there is a collision the new value will replace the previous one.
+Trees are a extension of linkend list, but with some differences. It Begin with a root node 
 
 
 BIG O NOTATION
@@ -179,4 +177,4 @@ BIG O NOTATION
 **INSERT** --> O(1)
 
 
-**FOR MORE SEE THE FILE maps.py and hash_table.py IN SRC**
+**FOR MORE SEE THE FILE binary_tree.py and bst.py IN SRC**
