@@ -163,7 +163,31 @@ BIG O NOTATION
 ![Binary Tree](https://austingwalters.com/wp-content/uploads/2014/10/binary-tree-1.png)
 
 
-Trees are a extension of linkend list, but with some differences. It Begin with a root node 
+Trees are a extension of linkend list, but with some differences. Trees start from a root node 
+And said root node points to two child nodes (Left and right), if you remember the linkend list always pointed to the next element, because in trees there are generally two references in each node. 
+
+Like other structures, trees also have their own rules that must always be taken into account:
+
+* A parent node can have two children (Left and Right references) but a child node can only have one parent.
+* You should always keep the tree as balanced as possible, this means that we should not add new elements in a single line.
+* There should not be cycles within the binary tree, this goes hand in hand with the first point since there should not be two ways to reach the same element.
+
+
+Tree terms:
+
+* Root: First node Introduced into the tree, From here the child nodes start.
+* Levels: Number of connections that it takes from the leaves to the root.
+* Leaf: Nodes without childrens (external nodes).
+* Edges: A group of connections taken together as a path.
+* Height: The height of the node, is the numbers of edges between it and furthest leaf on the tree. The leaves has a height 0.
+* Depth: The depth of the node, is the numbers o edges to the root.
+
+
+Ways to search a node in the tree:
+
+
+![Ways to search](https://image.slidesharecdn.com/rbolesbinarios-100524143730-phpapp02/95/rboles-binarios-28-728.jpg?cb=1274711920)
+
 
 
 BIG O NOTATION
@@ -174,7 +198,7 @@ BIG O NOTATION
 
 **DELETE** --> O(n)
 
-**INSERT** --> O(1)
+**INSERT** --> O(log n)
 
 
 **FOR MORE SEE THE FILE binary_tree.py and bst.py IN SRC**
